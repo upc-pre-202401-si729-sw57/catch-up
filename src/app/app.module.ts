@@ -16,6 +16,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatCardModule} from "@angular/material/card";
 import {MatMenuModule} from "@angular/material/menu";
 import {NgOptimizedImage} from "@angular/common";
+import {LogoApiService} from "./shared/services/logo-api.service";
+import {NewsApiService} from "./news/services/news-api.service";
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import {NgOptimizedImage} from "@angular/common";
     NgOptimizedImage
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    LogoApiService, NewsApiService
   ],
   bootstrap: [AppComponent]
 })
