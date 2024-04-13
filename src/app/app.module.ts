@@ -19,11 +19,13 @@ import {NgOptimizedImage} from "@angular/common";
 import {LogoApiService} from "./shared/services/logo-api.service";
 import {NewsApiService} from "./news/services/news-api.service";
 import { ArticleListComponent } from './news/components/article-list/article-list.component';
+import { SideNavigationBarComponent } from './public/components/side-navigation-bar/side-navigation-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    SideNavigationBarComponent
   ],
   imports: [
     BrowserModule,
