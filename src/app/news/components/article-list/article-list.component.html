@@ -9,7 +9,7 @@
     <p>{{ article.description }}</p>
   </mat-card-content>
   <mat-card-actions class="actions-section">
-    <a mat-button class="action-button" color="primary" [href]="article.url" target="_blank">More</a>
+    <a mat-button class="action-button" color="primary" [href]="article.url" target="_blank">{{ 'more'| translate }}</a>
     <span class="default-spacer"></span>
     <a mat-button class="action-button" [href]="article.source.url" target="_blank">{{ article.source.name }}</a>
     <button mat-icon-button color="white" aria-label="Comments"><mat-icon>comment</mat-icon></button>

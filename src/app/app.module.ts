@@ -22,6 +22,8 @@ import { ArticleListComponent } from './news/components/article-list/article-lis
 import { SideNavigationBarComponent } from './public/components/side-navigation-bar/side-navigation-bar.component';
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import { FooterContentComponent } from './public/components/footer-content/footer-content.component';
+import { LanguageSwitcherComponent } from './public/components/language-switcher/language-switcher.component';
 
 // HttpLoaderFactory method
 
@@ -33,7 +35,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     ArticleListComponent,
-    SideNavigationBarComponent
+    SideNavigationBarComponent,
+    FooterContentComponent,
+    LanguageSwitcherComponent
   ],
   imports: [
     BrowserModule,
